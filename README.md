@@ -1,5 +1,11 @@
 # Headway
 
+![Headway running on live MTA data](docs/headway.png)
+
+<sub>Live capture: 819 trains tracked from six MTA feeds, 2,507 Citi Bike stations,
+and a critical disruption detected on the L — five bunched trains southbound at
+1 Av, with the stalled train drawn in red beneath the card.</sub>
+
 Real-time detection of subway disruption on the NYC transit network. Live MTA
 GTFS-realtime feeds stream into Confluent Cloud, Flink SQL finds lines whose delay
 is anomalous against their own history and forecasts where they are heading, and a

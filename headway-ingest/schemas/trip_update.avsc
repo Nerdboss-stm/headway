@@ -1,0 +1,20 @@
+{
+  "type": "record",
+  "name": "TripUpdate",
+  "namespace": "mta",
+  "doc": "One upcoming-stop event derived from an MTA GTFS-realtime trip_update",
+  "fields": [
+    {"name": "trip_id", "type": "string"},
+    {"name": "route_id", "type": "string"},
+    {"name": "stop_id", "type": "string"},
+    {"name": "stop_name", "type": ["null", "string"], "default": null},
+    {"name": "lat", "type": ["null", "double"], "default": null},
+    {"name": "lon", "type": ["null", "double"], "default": null},
+    {"name": "direction", "type": "string", "doc": "N or S, from NYCT stop_id suffix"},
+    {"name": "arrival_ts", "type": "long", "doc": "epoch seconds, predicted arrival"},
+    {"name": "delay_sec", "type": "long"},
+    {"name": "feed_ts", "type": "long", "doc": "epoch seconds, feed header timestamp"},
+    {"name": "vehicle_status", "type": ["null", "string"], "default": null},
+    {"name": "synthetic", "type": "boolean", "default": false}
+  ]
+}

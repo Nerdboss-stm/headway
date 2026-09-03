@@ -1,0 +1,5 @@
+confluent-kafka[avro]>=2.6
+gtfs-realtime-bindings>=1.0.0
+requests>=2.31
+python-dotenv>=1.0
+websockets>=13

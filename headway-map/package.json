@@ -1,0 +1,23 @@
+{
+  "name": "headway-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "preprocess": "node scripts/preprocess.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fake": "node scripts/fake-server.mjs"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^9.3.11",
+    "@deck.gl/layers": "^9.3.11",
+    "maplibre-gl": "^6.7.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "vite": "^8.2.2",
+    "ws": "^8.21.3"
+  }
+}
